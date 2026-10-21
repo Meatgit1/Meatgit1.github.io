@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="ledger-title ledger-desc">
+  <title id="ledger-title">Heera Hisab — an offline ledger workflow</title>
+  <desc id="ledger-desc">An original interface sketch showing ordered entry, local draft review, and a report. All visible content is illustrative and contains no personal or financial records.</desc>
+  <defs>
+    <pattern id="ledger-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#102e3b" stroke-opacity=".045"/>
+    </pattern>
+    <filter id="ledger-shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#102e3b" flood-opacity=".09"/>
+    </filter>
+    <marker id="ledger-arrow" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+      <path d="m1 1 4 2.5L1 6" fill="none" stroke="#102e3b" stroke-width="1.2"/>
+    </marker>
+  </defs>
+  <rect width="800" height="460" fill="#f5f2e9"/>
+  <rect width="800" height="460" fill="url(#ledger-grid)"/>
+  <circle cx="741" cy="53" r="76" fill="#9bd2ca" opacity=".22"/>
+  <path d="M25 386h87M25 398h53" stroke="#cf542d" stroke-width="2" opacity=".55"/>
+  <g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" fill="#102e3b">
+    <circle cx="52" cy="42" r="4" fill="#cf542d"/>
+    <text x="67" y="46" font-size="10" font-weight="650" letter-spacing="1.8">LOCAL TOOLS / FAMILIAR WORKFLOWS</text>
+    <text x="746" y="46" text-anchor="end" font-size="9" letter-spacing="1.5" opacity=".6">WORKFLOW SKETCH</text>
+
+    <g filter="url(#ledger-shadow)">
+      <rect x="52" y="78" width="696" height="302" rx="12" fill="#fffdf7" stroke="#102e3b" stroke-opacity=".14"/>
+      <path d="M64 78h150v302H64a12 12 0 0 1-12-12V90a12 12 0 0 1 12-12Z" fill="#102e3b"/>
+      <path d="M214 120h534" stroke="#102e3b" stroke-opacity=".12"/>
+      <text x="240" y="104" font-size="11" font-weight="650">Daily ledger</text>
+      <rect x="667" y="92" width="57" height="17" rx="8.5" fill="#9bd2ca" fill-opacity=".34"/>
+      <circle cx="678" cy="100.5" r="2" fill="#3f756d"/>
+      <text x="687" y="104" font-size="8" letter-spacing="1" font-weight="650">LOCAL</text>
+
+      <text x="76" y="124" fill="#f5f2e9" font-size="25" font-weight="600" font-family="'Gujarati Sangam MN', 'Noto Sans Gujarati', sans-serif">હિસાબ</text>
+      <text x="76" y="147" fill="#9bd2ca" font-size="9" letter-spacing="1.7">HEERA HISAB</text>
+      <path d="M76 167h111" stroke="#f5f2e9" stroke-opacity=".16"/>
+      <rect x="68" y="187" width="130" height="35" rx="5" fill="#9bd2ca"/>
+      <rect x="81" y="198" width="12" height="13" rx="1" fill="none" stroke="#102e3b" stroke-width="1.3"/>
+      <path d="M84 202h6m-6 4h4" stroke="#102e3b" stroke-width="1.2"/>
+      <text x="105" y="209" font-size="11" font-weight="650">Entry</text>
+      <path d="m81 242 4 4 8-9" fill="none" stroke="#f5f2e9" stroke-opacity=".75" stroke-width="1.5"/>
+      <text x="105" y="246" fill="#f5f2e9" font-size="11" opacity=".8">Review</text>
+      <path d="M81 271v13h12m-8-4v-4m4 4v-8" fill="none" stroke="#f5f2e9" stroke-opacity=".75" stroke-width="1.4"/>
+      <text x="105" y="282" fill="#f5f2e9" font-size="11" opacity=".8">Report</text>
+      <circle cx="80" cy="349" r="3" fill="#9bd2ca"/>
+      <text x="92" y="352" fill="#f5f2e9" font-size="8.5" opacity=".65">Works offline</text>
+
+      <text x="241" y="149" font-size="9" letter-spacing="1.4" opacity=".58">ORDERED ENTRY</text>
+      <rect x="239" y="163" width="257" height="160" rx="6" fill="#f5f2e9"/>
+      <text x="255" y="188" font-size="10" font-weight="600">Keep the familiar sequence.</text>
+      <path d="M255 201h223" stroke="#102e3b" stroke-opacity=".12"/>
+      <rect x="255" y="217" width="83" height="26" rx="4" fill="#9bd2ca"/>
+      <text x="296.5" y="234" text-anchor="middle" font-size="10">Category A</text>
+      <rect x="346" y="217" width="82" height="26" rx="4" fill="#102e3b" fill-opacity=".08"/>
+      <text x="387" y="234" text-anchor="middle" font-size="10">Category B</text>
+      <rect x="255" y="251" width="83" height="26" rx="4" fill="#cf542d" fill-opacity=".13"/>
+      <text x="296.5" y="268" text-anchor="middle" font-size="10" fill="#a64325">Category C</text>
+      <rect x="346" y="251" width="82" height="26" rx="4" fill="#9bd2ca" fill-opacity=".52"/>
+      <text x="387" y="268" text-anchor="middle" font-size="10">Category A</text>
+      <path d="M255 298h104m11 0h40" stroke="#102e3b" stroke-width="3" stroke-linecap="round" opacity=".12"/>
+      <path d="M451 229h26m-5-5 5 5-5 5" fill="none" stroke="#cf542d" stroke-width="1.5"/>
+
+      <text x="517" y="149" font-size="9" letter-spacing="1.4" opacity=".58">REVIEW AT A GLANCE</text>
+      <rect x="514" y="163" width="210" height="160" rx="6" fill="#102e3b"/>
+      <rect x="531" y="182" width="23" height="23" rx="5" fill="#9bd2ca"/>
+      <path d="m537 193 4 4 7-8" fill="none" stroke="#102e3b" stroke-width="1.6"/>
+      <text x="565" y="198" fill="#f5f2e9" font-size="11" font-weight="600">Review before save</text>
+      <path d="M531 219h176" stroke="#f5f2e9" stroke-opacity=".18"/>
+      <text x="531" y="241" fill="#f5f2e9" font-size="9.5" opacity=".7">Entry sequence</text>
+      <text x="707" y="241" text-anchor="end" fill="#9bd2ca" font-size="9.5">Preserved</text>
+      <text x="531" y="264" fill="#f5f2e9" font-size="9.5" opacity=".7">Working draft</text>
+      <text x="707" y="264" text-anchor="end" fill="#9bd2ca" font-size="9.5">Local</text>
+      <rect x="531" y="283" width="176" height="24" rx="4" fill="#f5f2e9"/>
+      <text x="619" y="299" text-anchor="middle" font-size="9.5" font-weight="600">Open monthly report</text>
+
+      <path d="M239 341h485" stroke="#102e3b" stroke-opacity=".1"/>
+      <text x="241" y="361" font-size="9" fill="#586f76">Gujarati / English</text>
+      <text x="724" y="361" text-anchor="end" font-size="9" fill="#586f76">Familiar inputs. Reviewable results.</text>
+    </g>
+
+    <g font-size="9" letter-spacing="1.5" font-weight="600">
+      <text x="208" y="421" text-anchor="middle">ENTRY</text>
+      <path d="M251 417h99" fill="none" stroke="#102e3b" stroke-opacity=".4" marker-end="url(#ledger-arrow)"/>
+      <text x="398" y="421" text-anchor="middle">REVIEW</text>
+      <path d="M447 417h99" fill="none" stroke="#102e3b" stroke-opacity=".4" marker-end="url(#ledger-arrow)"/>
+      <text x="596" y="421" text-anchor="middle">REPORT</text>
+    </g>
+  </g>
+</svg>

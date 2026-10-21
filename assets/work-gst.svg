@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="gst-title gst-desc">
+  <title id="gst-title">GST Local Pro — a traceable report preparation workflow</title>
+  <desc id="gst-desc">An original conceptual illustration of source spreadsheets flowing through validation into a review and export panel. The sheets use abstract placeholders and contain no customer records or actual tax data.</desc>
+  <defs>
+    <pattern id="gst-grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#102e3b" stroke-opacity=".045"/>
+    </pattern>
+    <filter id="gst-shadow" x="-25%" y="-20%" width="150%" height="160%">
+      <feDropShadow dx="0" dy="9" stdDeviation="10" flood-color="#102e3b" flood-opacity=".08"/>
+    </filter>
+    <marker id="gst-arrow" markerWidth="7" markerHeight="7" refX="5.5" refY="3.5" orient="auto">
+      <path d="m1 1 4.5 2.5L1 6" fill="none" stroke="#cf542d" stroke-width="1.3"/>
+    </marker>
+  </defs>
+  <rect width="800" height="460" fill="#f5f2e9"/>
+  <rect width="800" height="460" fill="url(#gst-grid)"/>
+  <circle cx="79" cy="333" r="86" fill="#9bd2ca" opacity=".18"/>
+  <path d="M697 68h51M723 55v26" stroke="#cf542d" stroke-opacity=".6" stroke-width="1.5"/>
+  <g font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" fill="#102e3b">
+    <circle cx="52" cy="42" r="4" fill="#cf542d"/>
+    <text x="67" y="46" font-size="10" font-weight="650" letter-spacing="1.8">DATA TOOLS / TRACEABLE OUTPUTS</text>
+    <text x="746" y="46" text-anchor="end" font-size="9" letter-spacing="1.5" opacity=".6">WORKFLOW SKETCH</text>
+
+    <g fill="none" stroke="#cf542d" stroke-width="1.5">
+      <path d="M218 179h61v32h39" marker-end="url(#gst-arrow)"/>
+      <path d="M267 277h26v-31h25" marker-end="url(#gst-arrow)"/>
+      <path d="M498 227h35" marker-end="url(#gst-arrow)"/>
+    </g>
+    <circle cx="279" cy="211" r="3" fill="#cf542d"/>
+    <circle cx="293" cy="246" r="3" fill="#cf542d"/>
+
+    <g filter="url(#gst-shadow)">
+      <rect x="57" y="105" width="162" height="190" rx="7" fill="#fffdf7" stroke="#102e3b" stroke-opacity=".16"/>
+      <path d="M64 105h148a7 7 0 0 1 7 7v31H57v-31a7 7 0 0 1 7-7Z" fill="#102e3b"/>
+      <text x="73" y="129" fill="#f5f2e9" font-size="10" font-weight="600">Source report</text>
+      <path d="M73 162h130M73 184h130M73 206h130M73 228h130M73 250h130M73 272h130M114 153v120M159 153v120" stroke="#102e3b" stroke-opacity=".11"/>
+      <rect x="75" y="164" width="36" height="17" fill="#9bd2ca" fill-opacity=".5"/>
+      <path d="M120 173h27m18 0h28M80 195h25m15 0h24m23 0h26M80 217h25m15 0h27m18 0h28M80 239h25m15 0h24m23 0h26" stroke="#102e3b" stroke-width="2.5" stroke-linecap="round" opacity=".17"/>
+
+      <rect x="110" y="180" width="158" height="175" rx="7" fill="#fffdf7" stroke="#102e3b" stroke-opacity=".16"/>
+      <path d="M117 180h144a7 7 0 0 1 7 7v31H110v-31a7 7 0 0 1 7-7Z" fill="#9bd2ca"/>
+      <text x="126" y="204" font-size="10" font-weight="600">Additional report</text>
+      <path d="M126 237h126M126 260h126M126 283h126M126 306h126M126 329h126M166 228v102M209 228v102" stroke="#102e3b" stroke-opacity=".11"/>
+      <rect x="168" y="262" width="38" height="18" fill="#cf542d" fill-opacity=".12"/>
+      <path d="M132 248h25m16 0h25m17 0h27M132 271h25m16 0h25m17 0h27M132 294h25m16 0h25m17 0h27M132 317h25m16 0h25m17 0h27" stroke="#102e3b" stroke-width="2.5" stroke-linecap="round" opacity=".17"/>
+    </g>
+
+    <g filter="url(#gst-shadow)">
+      <rect x="321" y="117" width="177" height="229" rx="10" fill="#102e3b"/>
+      <rect x="340" y="136" width="30" height="30" rx="7" fill="#cf542d"/>
+      <path d="m348 151 5 5 9-11" fill="none" stroke="#fffdf7" stroke-width="1.7"/>
+      <text x="382" y="155" fill="#f5f2e9" font-size="12" font-weight="650">Validation</text>
+      <path d="M340 182h139" stroke="#f5f2e9" stroke-opacity=".18"/>
+      <text x="340" y="207" fill="#9bd2ca" font-size="8.5" letter-spacing="1.1">VISIBLE CHECKS</text>
+      <g fill="none" stroke="#9bd2ca" stroke-width="1.3">
+        <rect x="341" y="222" width="12" height="12" rx="2"/>
+        <rect x="341" y="248" width="12" height="12" rx="2"/>
+        <rect x="341" y="274" width="12" height="12" rx="2"/>
+      </g>
+      <g fill="#f5f2e9" font-size="10">
+        <text x="364" y="232">Structure</text>
+        <text x="364" y="258">Source trace</text>
+        <text x="364" y="284">Review items</text>
+      </g>
+      <path d="M340 303h139" stroke="#f5f2e9" stroke-opacity=".18"/>
+      <text x="409.5" y="327" text-anchor="middle" fill="#f5f2e9" font-size="8.5" opacity=".62">Keep uncertainty visible.</text>
+    </g>
+
+    <g filter="url(#gst-shadow)">
+      <rect x="538" y="142" width="210" height="201" rx="8" fill="#fffdf7" stroke="#102e3b" stroke-opacity=".16"/>
+      <path d="M546 142h194a8 8 0 0 1 8 8v34H538v-34a8 8 0 0 1 8-8Z" fill="#9bd2ca"/>
+      <text x="555" y="168" font-size="11" font-weight="650">Review &amp; export</text>
+      <rect x="555" y="201" width="176" height="24" rx="4" fill="#f5f2e9"/>
+      <circle cx="567" cy="213" r="3" fill="#cf542d"/>
+      <text x="578" y="216" font-size="9">Follow the source row</text>
+      <path d="M555 243h176M555 267h176" stroke="#102e3b" stroke-opacity=".1"/>
+      <path d="M557 237h70m27 0h73M557 260h92m15 0h63M557 283h59m38 0h73" stroke="#102e3b" stroke-width="3" stroke-linecap="round" opacity=".14"/>
+      <rect x="555" y="301" width="176" height="25" rx="4" fill="#cf542d"/>
+      <text x="643" y="318" text-anchor="middle" fill="#fffdf7" font-size="9.5" font-weight="600">Review, then export</text>
+    </g>
+
+    <path d="M52 388h696" stroke="#102e3b" stroke-opacity=".14"/>
+    <g font-size="9" letter-spacing="1.5" font-weight="600">
+      <text x="52" y="416">SOURCE FILES</text>
+      <text x="321" y="416">EXPLICIT CHECKS</text>
+      <text x="538" y="416">HUMAN REVIEW</text>
+    </g>
+    <text x="52" y="435" font-size="8.5" opacity=".56">Illustrative structure · no real records</text>
+  </g>
+</svg>

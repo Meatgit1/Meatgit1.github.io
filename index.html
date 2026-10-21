@@ -1,56 +1,49 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Meet Bhalani — master's student in aerospace engineering at FH Aachen. Personal portfolio in progress.">
-    <meta name="theme-color" content="#f5f3ed">
-    <title>Meet Bhalani · Aerospace Engineering</title>
-    <style>
-      :root { color-scheme: light; --paper: #f5f3ed; --ink: #202921; --muted: #586357; --accent: #b83b24; }
-      * { box-sizing: border-box; }
-      body { margin: 0; background: var(--paper); color: var(--ink); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-      .page { width: min(1120px, 100%); min-height: 100svh; margin-inline: auto; padding: 32px 48px; display: flex; flex-direction: column; }
-      header, footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
-      header { border-bottom: 1px solid #c8cec3; padding-bottom: 24px; }
-      .monogram { display: inline-grid; place-items: center; width: 42px; height: 42px; background: var(--ink); color: var(--paper); font-size: 14px; font-weight: 700; }
-      .domain, .eyebrow, .status, footer { font-size: 12px; letter-spacing: .06em; }
-      .domain { color: var(--muted); }
-      main { flex: 1; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 88px 0 100px; }
-      .eyebrow { color: var(--accent); font-weight: 650; text-transform: uppercase; margin: 0 0 24px; }
-      h1 { font-weight: 500; font-size: clamp(60px, 9vw, 112px); line-height: 1.03; letter-spacing: -.07em; margin: 0 0 28px; }
-      .intro { max-width: 580px; font-size: clamp(20px, 2.5vw, 28px); line-height: 1.45; letter-spacing: -.025em; margin: 0 0 20px; }
-      .note { max-width: 480px; color: var(--muted); font-size: 16px; line-height: 1.7; margin: 0 0 32px; }
-      .profile { display: inline-flex; align-items: center; gap: 24px; padding: 14px 0; color: var(--ink); font-size: 15px; font-weight: 600; text-decoration-thickness: 1px; text-underline-offset: 6px; }
-      .profile:hover { color: var(--accent); }
-      a:focus-visible { outline: 2px solid var(--accent); outline-offset: 7px; }
-      footer { color: var(--muted); border-top: 1px solid #c8cec3; padding-top: 24px; line-height: 1.5; }
-      .status { display: flex; align-items: center; gap: 9px; }
-      .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
-      @media (max-width: 560px) {
-        .page { padding: 24px; }
-        main { padding: 72px 0; }
-        footer { align-items: flex-start; flex-direction: column; gap: 12px; }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="page">
-      <header>
-        <span class="monogram" aria-label="Meet Bhalani">MB</span>
-        <span class="domain">meetbhalani.tech</span>
-      </header>
-      <main>
-        <p class="eyebrow">Aerospace engineering &amp; computation</p>
-        <h1>Meet Bhalani.</h1>
-        <p class="intro">Master’s student in aerospace engineering at FH Aachen.</p>
-        <p class="note">I’m putting together a home for my engineering projects, ideas, and things I learn along the way. More coming soon.</p>
-        <a class="profile" href="https://github.com/Meatgit1">Find me on GitHub <span aria-hidden="true">↗</span></a>
-      </main>
-      <footer>
-        <span class="status"><span class="dot" aria-hidden="true"></span>Portfolio in progress</span>
-        <span>Engineering. Learning. Building.</span>
-      </footer>
-    </div>
-  </body>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Meet Bhalani — aerospace engineering, solar-sail trajectory research, spacecraft ground systems, and thoughtful software. Master's student at FH Aachen.">
+  <meta name="theme-color" content="#f5f2e9">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Meet Bhalani — Aerospace engineering & computational systems">
+  <meta property="og:description" content="From orbital ideas to working systems. Explore trajectory research, spacecraft command verification, and practical software.">
+  <meta property="og:url" content="https://meetbhalani.tech/">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://meetbhalani.tech/">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script src="assets/portfolio.js" defer></script>
+  <title>Meet Bhalani — Aerospace Engineering & Systems</title>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="header-inner shell">
+    <a class="brand" href="#top" aria-label="Meet Bhalani — back to top"><span class="monogram">MB<span></span></span><span>Meet Bhalani<span class="brand-subtitle">Aerospace &amp; systems</span></span></a>
+    <nav class="site-nav" aria-label="Main navigation" data-open="false"><button class="menu-toggle" type="button" aria-controls="primary-links" aria-expanded="false"><span>Menu</span><span class="menu-lines" aria-hidden="true"></span></button><div class="nav-links" id="primary-links"><a href="#work">Selected work</a><a href="#approach">Approach</a><a href="#about">About</a><a class="nav-contact" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a></div></nav>
+  </div></header>
+  <main id="main">
+    <section class="hero shell" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="tiny-cross" aria-hidden="true">+</span> Aerospace engineering · FH Aachen</p><h1 id="hero-title">From orbital ideas<br>to <span>working systems.</span></h1><p class="hero-intro">I’m Meet, a master’s student in aerospace engineering. I connect trajectory research, spacecraft ground systems, and software built around the people who use it.</p><div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link" href="https://github.com/Meatgit1" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div><div class="hero-footnote"><span class="status-dot" aria-hidden="true"></span> Currently exploring solar-sail rendezvous &amp; optimisation</div></div>
+      <figure class="hero-figure"><img src="assets/hero-orbit.svg" alt="Illustrative orbital paths around a sun, with a small solar sail following a curved route." width="680" height="620" fetchpriority="high"><figcaption><span>01 / A systems perspective</span><span>Model → build → verify</span></figcaption></figure>
+    </section>
+    <div class="discipline-strip"><div class="shell"><span>Orbital dynamics</span><span aria-hidden="true">✳</span><span>Ground systems</span><span aria-hidden="true">✳</span><span>Verification</span><span aria-hidden="true">✳</span><span>Human-centred software</span></div></div>
+    <section class="work-section shell section-space" id="work" aria-labelledby="work-title">
+      <div class="section-heading"><div><p class="eyebrow">Selected work / 01—04</p><h2 id="work-title">Different domains.<br><span class="serif">The same engineering instinct.</span></h2></div><p class="section-intro">Understand the inputs. Make the behaviour explicit. Build something that can be checked—and used.</p></div>
+      <div class="work-toolbar js-only"><div class="filters" role="group" aria-label="Filter projects"><button type="button" class="filter is-active" data-filter="all" aria-pressed="true">All work <span>04</span></button><button type="button" class="filter" data-filter="aerospace" aria-pressed="false">Aerospace <span>02</span></button><button type="button" class="filter" data-filter="software" aria-pressed="false">Software <span>02</span></button></div><p id="filter-status" class="filter-status" role="status" aria-live="polite">Showing all 4 projects</p></div>
+      <div class="project-grid">
+        <article class="project-card" data-category="aerospace" id="project-sail"><div class="project-image project-image-dark"><img src="assets/work-sail.svg" alt="An original schematic of solar-sail geometry and a trajectory-refinement workflow." width="800" height="460" loading="lazy"><span class="image-index">01</span></div><div class="project-meta"><span>Master’s research</span><span class="project-status"><span aria-hidden="true"></span>Ongoing</span></div><h3>Steering with sunlight.</h3><p>Connecting evolutionary neurocontrol and local optimisation for ideal solar-sail interplanetary rendezvous.</p><ul class="tags" aria-label="Technologies and methods"><li>C++ / Python</li><li>CasADi / Ipopt</li><li>Orbital dynamics</li></ul><button class="case-link js-only" type="button" data-case="sail" aria-haspopup="dialog">Explore the research <span aria-hidden="true">↗</span></button></article>
+        <article class="project-card" data-category="aerospace" id="project-command"><div class="project-image"><img src="assets/work-command.svg" alt="A conceptual workflow connecting operator inputs, command checks and ground software." width="800" height="460" loading="lazy"><span class="image-index">02</span></div><div class="project-meta"><span>Bachelor’s thesis</span><span>Spacecraft verification</span></div><h3>From input to verified command.</h3><p>A graphical command-verification workflow and mission-database integration for CubeSat propulsion.</p><ul class="tags" aria-label="Technologies and methods"><li>Python / PySide6</li><li>Yamcs</li><li>XTCE / XML</li></ul><button class="case-link js-only" type="button" data-case="command" aria-haspopup="dialog">Explore the thesis <span aria-hidden="true">↗</span></button></article>
+        <article class="project-card" data-category="software" id="project-ledger"><div class="project-image"><img src="assets/work-ledger.svg" alt="A synthetic ledger interface showing entry, review and report stages without real records." width="800" height="460" loading="lazy"><span class="image-index">03</span></div><div class="project-meta"><span>Independent software</span><span>Mac &amp; Android</span></div><h3>Familiar workflow. Digital clarity.</h3><p>Diamond Ledger / Heera Hisab: a Gujarati-first, offline ledger shaped around an existing handwritten way of working.</p><ul class="tags" aria-label="Technologies and methods"><li>JavaScript / Python</li><li>Android / Java</li><li>SQLite</li></ul><button class="case-link js-only" type="button" data-case="ledger" aria-haspopup="dialog">Explore the project <span aria-hidden="true">↗</span></button></article>
+        <article class="project-card" data-category="software" id="project-gst"><div class="project-image"><img src="assets/work-gst.svg" alt="An abstract spreadsheet-to-review pipeline with validation and export stages, using no client data." width="800" height="460" loading="lazy"><span class="image-index">04</span></div><div class="project-meta"><span>Independent software</span><span>Desktop prototype</span></div><h3>Make every output traceable.</h3><p>GST Local Pro: an offline spreadsheet review and export tool developed around an accounting workflow.</p><ul class="tags" aria-label="Technologies and methods"><li>Electron / Node.js</li><li>Data validation</li><li>Review workflows</li></ul><button class="case-link js-only" type="button" data-case="gst" aria-haspopup="dialog">Explore the project <span aria-hidden="true">↗</span></button></article>
+      </div><p class="work-note">Project visuals are original conceptual illustrations. Professional and private work is presented at a high level.</p>
+    </section>
+    <section class="ground-section" aria-labelledby="ground-title"><div class="ground-inner shell"><div class="ground-label"><p class="eyebrow">Professional experience</p><span class="company-mark">GOS<span class="company-orbit" aria-hidden="true"></span></span><p>Ground segment engineering</p></div><div class="ground-copy"><h2 id="ground-title">Keeping the ground loop<br><span class="serif">understandable.</span></h2><p>My work at GOS connects spacecraft interfaces to usable ground software. I contribute to telemetry and telecommand definitions, mission-database integration, operational scripts, and engineering documentation in a Yamcs-based environment.</p><div class="ground-areas"><span>TM/TC definitions</span><span>Integration checks</span><span>Operational tooling</span></div><p class="ground-stack">Yamcs <span>·</span> XTCE / XML <span>·</span> Python <span>·</span> Java</p></div></div></section>
+    <section class="approach-section shell section-space" id="approach" aria-labelledby="approach-title"><div class="section-heading"><div><p class="eyebrow">How I work</p><h2 id="approach-title">Curiosity is the start.<br><span class="serif">Evidence is the next step.</span></h2></div><p class="section-intro">A trajectory model and a ledger look different. Both become better systems when assumptions, state, and checks are clear.</p></div><ol class="approach-grid"><li><span class="step-number">01 / Understand</span><h3>Start with the real workflow.</h3><p>Follow the inputs, constraints, and people involved. A useful model begins with a clear problem.</p><span class="step-symbol" aria-hidden="true">↳</span></li><li><span class="step-number">02 / Build</span><h3>Connect the moving parts.</h3><p>Translate the model into software with explicit interfaces, inspectable state, and a usable path through the work.</p><span class="step-symbol" aria-hidden="true">↔</span></li><li><span class="step-number">03 / Verify</span><h3>Check the result independently.</h3><p>Use validation, replay, source traceability, and clear limitations to understand what a result actually demonstrates.</p><span class="step-symbol" aria-hidden="true">✓</span></li></ol></section>
+    <section class="about-section shell" id="about" aria-labelledby="about-title"><div class="about-title"><p class="eyebrow">A little about me</p><h2 id="about-title">Aerospace by training.<br><span class="serif">A builder by habit.</span></h2></div><div class="about-copy"><p>I’m pursuing an M.Sc. in Aerospace Engineering at FH Aachen, specialising in Space Exploration Engineering, after completing my bachelor’s degree in Aerospace Engineering there.</p><p>I’m drawn to the space between the equation and the working tool: a sail-steering problem, a spacecraft command interface, or a workflow that deserves better software. I enjoy finding the structure in a complicated problem and making it clearer for the next person.</p><div class="education"><div><span class="education-marker" aria-hidden="true"></span><div><strong>M.Sc. Aerospace Engineering</strong><span>FH Aachen · Space Exploration Engineering · Ongoing</span></div></div><div><span class="education-marker education-marker-complete" aria-hidden="true"></span><div><strong>B.Eng. Aerospace Engineering</strong><span>FH Aachen · Completed</span></div></div></div></div></section>
+    <section class="contact-section shell section-space" id="contact" aria-labelledby="contact-title"><div class="contact-panel"><p class="eyebrow">Start a conversation</p><h2 id="contact-title">Have a system<br>worth <span class="serif">figuring out?</span></h2><div class="contact-bottom"><p>I’m interested in aerospace engineering, ground systems, numerical methods, and thoughtful software. Find me on GitHub.</p><a class="button button-light" href="https://github.com/Meatgit1" target="_blank" rel="noopener noreferrer">Meet me on GitHub <span aria-hidden="true">↗</span></a></div><span class="contact-orbit" aria-hidden="true"></span></div></section>
+  </main>
+  <footer class="site-footer shell"><a class="footer-name" href="#top">Meet Bhalani<span aria-hidden="true">↗</span></a><p>Aerospace engineering &amp; computational systems</p><span>© <span id="year">2026</span></span></footer>
+  <dialog class="case-dialog" id="case-dialog" aria-labelledby="case-title"><div class="dialog-top"><span class="dialog-label">Project notes</span><button class="dialog-close" type="button" aria-label="Close project details">Close <span aria-hidden="true">×</span></button></div><div class="case-content" id="case-content"></div></dialog>
+</body>
 </html>

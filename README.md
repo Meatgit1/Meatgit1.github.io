@@ -1,26 +1,29 @@
-# Meet Bhalani — personal website
+# Meet Bhalani — aerospace engineering portfolio
 
-A lightweight personal website for a master’s student in aerospace engineering at FH Aachen.
+A responsive, buildless portfolio at **https://meetbhalani.tech**.
 
-- Website: https://meetbhalani.tech
-- Default GitHub Pages address: https://meatgit1.github.io
-- Source: https://github.com/Meatgit1/Meatgit1.github.io
+The site brings together solar-sail trajectory research, a CubeSat command-verification bachelor's thesis, ground-segment contributions at GOS, and two independent software projects.
 
-## Files
+## Edit the site
 
-- `index.html`: page content and styles; edit this file to update the website.
-- `.nojekyll`: serves the files directly without a Jekyll build.
-- `CNAME`: the custom domain, once configured in GitHub Pages. Keep this file when updating the site.
+- `index.html`: page structure, summaries, education, and contact route.
+- `assets/styles.css`: layout, responsive styles, and dialog presentation.
+- `assets/portfolio.js`: project case studies, filters, mobile navigation, and accessible native dialogs.
+- `assets/*.svg`: original conceptual illustrations and favicon.
+- `CNAME`: the custom domain; retain it when updating the website.
+- `.nojekyll`: direct static publishing without Jekyll processing.
+- `robots.txt` and `sitemap.xml`: basic discovery metadata.
 
-No dependencies or build step are required. Open `index.html` locally to preview it.
+There are no package dependencies, external fonts, analytics, or build steps. Open `index.html` locally, or serve this directory with a static HTTP server.
 
-## Publishing
+Project summaries remain readable without JavaScript. JavaScript enables the filters, case-study dialogs, and compact mobile navigation. Motion preferences and keyboard navigation are respected.
 
-GitHub Pages should publish from `main`, using the repository root (`/`). Commits to that branch update the website.
+## Public content
 
-The domain is registered with Namecheap. GitHub Pages supplies hosting and HTTPS. Domain ownership verification uses a separate DNS TXT record, which should be retained.
+The case studies use high-level descriptions and original conceptual diagrams. They distinguish ongoing research, completed thesis work, and prototype or packaged software. The GitHub profile is the sole public contact route.
 
-## References
+Keep client data, internal technical identifiers, operational screenshots, and private source material out of this repository. Local previews and working notes in `output/` are ignored by Git.
 
-- [GitHub Pages documentation](https://docs.github.com/en/pages)
-- [Custom domain configuration](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
+## Publish
+
+GitHub Pages serves the repository root from `main`. Changes to that branch trigger deployment. The domain is managed through Namecheap; GitHub Pages provides HTTPS.

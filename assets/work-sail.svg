@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">Solar-sail research method illustration</title>
+  <desc id="desc">A conceptual sun-to-sail steering schematic above a three-stage sequence: evolutionary search, local refinement, and independent checks. The diagram is illustrative and contains no research results.</desc>
+  <defs>
+    <pattern id="grid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0v40" stroke="#102e3b" stroke-opacity=".055"/>
+    </pattern>
+    <radialGradient id="sun">
+      <stop stop-color="#f4b16d"/>
+      <stop offset="1" stop-color="#cf542d"/>
+    </radialGradient>
+    <linearGradient id="panel" x1="382" y1="86" x2="523" y2="242" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#d3ece1"/>
+      <stop offset=".5" stop-color="#9bd2ca"/>
+      <stop offset="1" stop-color="#6e9da2"/>
+    </linearGradient>
+    <marker id="navy-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="m1 1 6 3-6 3" stroke="#102e3b" stroke-width="1.1" fill="none"/>
+    </marker>
+    <marker id="orange-arrow" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="m1 1 6 3-6 3" stroke="#cf542d" stroke-width="1.1" fill="none"/>
+    </marker>
+  </defs>
+  <path fill="#f5f2e9" d="M0 0h800v460H0z"/>
+  <path fill="url(#grid)" d="M0 0h800v460H0z"/>
+  <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10" letter-spacing="1.8" fill="#5b747a">
+    <text x="36" y="33">RESEARCH / SOLAR-SAIL GUIDANCE</text>
+    <text x="598" y="33">CONCEPT SCHEMATIC</text>
+  </g>
+  <path d="M35 50h730" stroke="#102e3b" stroke-opacity=".16"/>
+  <path d="M42 279c110-122 249-164 377-125s235 47 344-39" stroke="#102e3b" stroke-opacity=".11" stroke-width="1.3"/>
+  <path d="M42 296c110-122 249-164 377-125s235 47 344-39" stroke="#102e3b" stroke-opacity=".07" stroke-dasharray="4 6"/>
+  <circle cx="150" cy="179" r="62" fill="#cf542d" fill-opacity=".04"/>
+  <circle cx="150" cy="179" r="45" stroke="#cf542d" stroke-opacity=".2"/>
+  <circle cx="150" cy="179" r="32" fill="url(#sun)"/>
+  <g stroke="#cf542d" stroke-opacity=".65" stroke-width="1.1" marker-end="url(#orange-arrow)">
+    <path d="M214 152h143"/>
+    <path d="M226 179h131"/>
+    <path d="M214 206h143"/>
+  </g>
+  <text x="222" y="135" fill="#9b5b42" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="9" letter-spacing="1.3">LIGHT PRESSURE</text>
+  <path d="M453 85 523 169 453 253 383 169Z" fill="url(#panel)" stroke="#3d707a" stroke-width="1.4"/>
+  <path d="m453 85 0 168m-70-84h140" stroke="#32616f" stroke-opacity=".6"/>
+  <path d="m453 85 70 84h-70Z" fill="#f5f2e9" fill-opacity=".32"/>
+  <path d="m383 169 70 84V169Z" fill="#1b5968" fill-opacity=".12"/>
+  <path d="M453 169 576 113" stroke="#102e3b" stroke-width="1.3" marker-end="url(#navy-arrow)"/>
+  <path d="M453 169h153" stroke="#102e3b" stroke-opacity=".28" stroke-dasharray="3 5"/>
+  <path d="M493 169a40 40 0 0 0-3.6-16.6" stroke="#cf542d" stroke-width="1.5"/>
+  <circle cx="453" cy="169" r="4" fill="#102e3b" stroke="#f5f2e9" stroke-width="1.5"/>
+  <g font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="10" letter-spacing="1.2" fill="#4d6972">
+    <text x="593" y="109">STEERING</text>
+    <text x="593" y="125">DIRECTION</text>
+    <path d="M453 253v25h114" stroke="#7b9597" stroke-opacity=".65"/>
+    <text x="578" y="282">IDEAL SAIL MODEL</text>
+    <text x="112" y="245">THE SUN</text>
+  </g>
+  <path d="M36 320h728" stroke="#102e3b" stroke-opacity=".18"/>
+  <g stroke="#102e3b" stroke-opacity=".25" stroke-width="1.1">
+    <path d="M67 366h38m-28-10 18 20m-18 0 18-20"/>
+    <circle cx="76" cy="356" r="4" fill="#f5f2e9"/>
+    <circle cx="96" cy="376" r="4" fill="#f5f2e9"/>
+    <circle cx="96" cy="356" r="4" fill="#f5f2e9"/>
+    <circle cx="76" cy="376" r="4" fill="#f5f2e9"/>
+    <path d="m325 380 10-25 12 13 13-25" stroke="#cf542d" stroke-width="1.6"/>
+    <path d="M320 345v40h45"/>
+    <circle cx="602" cy="365" r="18"/>
+    <path d="m593 365 6 6 13-14" stroke="#326b70" stroke-opacity="1" stroke-width="1.8"/>
+  </g>
+  <g fill="#102e3b" font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="14" font-weight="500">
+    <text x="121" y="361">Evolutionary</text>
+    <text x="121" y="381">search</text>
+    <text x="381" y="361">Local</text>
+    <text x="381" y="381">refinement</text>
+    <text x="641" y="361">Independent</text>
+    <text x="641" y="381">checks</text>
+  </g>
+  <path d="M259 366h32m228 0h32" stroke="#8b9d9c" marker-end="url(#navy-arrow)"/>
+  <g fill="#6e8387" font-family="ui-monospace, SFMono-Regular, Consolas, monospace" font-size="9" letter-spacing="1.2">
+    <text x="36" y="436">ILLUSTRATIVE GEOMETRY — NOT A MISSION RESULT</text>
+  </g>
+</svg>
