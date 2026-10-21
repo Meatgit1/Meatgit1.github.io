@@ -13,7 +13,9 @@
   <link rel="canonical" href="https://meetbhalani.tech/">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/sail-explorer.css">
   <script src="assets/portfolio.js" defer></script>
+  <script type="module" src="assets/sail-explorer.js"></script>
   <title>Meet Bhalani — Aerospace Engineering & Systems</title>
 </head>
 <body>
@@ -25,7 +27,49 @@
   <main id="main">
     <section class="hero shell" id="top" aria-labelledby="hero-title">
       <div class="hero-copy"><p class="eyebrow"><span class="tiny-cross" aria-hidden="true">+</span> Aerospace engineering · FH Aachen</p><h1 id="hero-title">From orbital ideas<br>to <span>working systems.</span></h1><p class="hero-intro">I’m Meet, a master’s student in aerospace engineering. I connect trajectory research, spacecraft ground systems, and software built around the people who use it.</p><div class="hero-actions"><a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link" href="https://github.com/Meatgit1" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a></div><div class="hero-footnote"><span class="status-dot" aria-hidden="true"></span> Currently exploring solar-sail rendezvous &amp; optimisation</div></div>
-      <figure class="hero-figure"><img src="assets/hero-orbit.svg" alt="Illustrative orbital paths around a sun, with a small solar sail following a curved route." width="680" height="620" fetchpriority="high"><figcaption><span>01 / A systems perspective</span><span>Model → build → verify</span></figcaption></figure>
+      <figure class="hero-figure sail-explorer" id="sail-lab" aria-labelledby="sail-title">
+        <div class="sail-heading"><p class="eyebrow">Try the physics</p><h2 id="sail-title">Tilt the sail. Steer the push.</h2><p>Light pushes a reflective sail. Its angle changes the push.</p></div>
+        <svg class="sail-scene" id="sail-scene" viewBox="0 0 680 390" role="img" aria-labelledby="sail-svg-title sail-svg-description">
+          <title id="sail-svg-title">Interactive ideal solar sail, viewed from the side</title>
+          <desc id="sail-svg-description">Sunlight travels left to right. A tilted sail receives a weaker push along its outward normal. The orange arrow is sail acceleration; dashed teal lines show its components.</desc>
+          <defs>
+            <linearGradient id="sail-space" x2="1" y2="1"><stop stop-color="#183e4c"/><stop offset="1" stop-color="#102e3b"/></linearGradient>
+            <radialGradient id="sail-sun"><stop stop-color="#f9e1a2"/><stop offset=".65" stop-color="#e7aa69"/><stop offset="1" stop-color="#cf542d"/></radialGradient>
+            <linearGradient id="sail-film"><stop stop-color="#ecf4e7"/><stop offset=".5" stop-color="#9bd2ca"/><stop offset="1" stop-color="#5e9298"/></linearGradient>
+            <marker id="sail-force-head" viewBox="0 0 7 7" markerWidth="14" markerHeight="14" refX="7" refY="3.5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0 0 7 3.5 0 7Z" fill="#f3a276"/></marker>
+            <marker id="sail-light-head" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto"><path d="M0 0 6 3 0 6" fill="none" stroke="#e9bf87"/></marker>
+          </defs>
+          <rect width="680" height="390" fill="url(#sail-space)"/>
+          <g stroke="#acc7c6" opacity=".07"><path d="M0 78H680M0 156H680M0 234H680M0 312H680M85 0V390M170 0V390M255 0V390M340 0V390M425 0V390M510 0V390M595 0V390"/></g>
+          <text class="sail-svg-kicker" x="27" y="31">LOCAL FORCE VIEW</text><text class="sail-svg-kicker" x="653" y="31" text-anchor="end">IDEAL REFLECTOR · SIDE VIEW</text>
+          <circle cx="84" cy="210" r="54" fill="none" stroke="#dfb782" opacity=".12"/><circle cx="84" cy="210" r="45" fill="none" stroke="#dfb782" opacity=".2"/><circle cx="84" cy="210" r="36" fill="url(#sail-sun)"/>
+          <text class="sail-svg-label" x="84" y="276" text-anchor="middle">Sun</text>
+          <g class="sail-light-rays" stroke="#e9bf87" stroke-width="1.5" opacity=".7" marker-end="url(#sail-light-head)"><path d="M147 163H252"/><path d="M147 210H252"/><path d="M147 257H252"/></g>
+          <text class="sail-svg-label sail-light-label" x="200" y="140" text-anchor="middle">Sunlight</text>
+          <g class="sail-reference" fill="none" stroke="#b8cecd" stroke-width="1" stroke-dasharray="3 6" opacity=".4"><path d="M350 210H572"/><path d="M350 210V72"/></g>
+          <text class="sail-svg-label" x="568" y="235" text-anchor="end">Away from Sun →</text><text class="sail-svg-label" x="363" y="83">+ Sideways</text>
+          <path id="sail-angle-arc" d="M392 210 A42 42 0 0 0 384.405 185.91" fill="none" stroke="#f5f2e9" stroke-width="1.5" opacity=".7"/>
+          <text class="sail-angle-label" id="sail-angle-annotation" x="408" y="185">35°</text>
+          <g id="sail-sheet" transform="translate(350 210) rotate(-35)"><rect x="-6" y="-67" width="12" height="134" rx="2" fill="url(#sail-film)" stroke="#d3e9e2"/><path d="M0 -67V67M-6 0H6" stroke="#628c91" stroke-width="1"/><circle r="4" fill="#102e3b" stroke="#e4f0e9" stroke-width="1.5"/></g>
+          <line id="sail-normal-line" x1="350" y1="210" x2="472.873" y2="123.964" stroke="#d7e8e2" stroke-width="1.3" stroke-dasharray="4 5" opacity=".65"/>
+          <path id="sail-components" d="M350 210H421.456V159.965" fill="none" stroke="#9bd2ca" stroke-width="2" stroke-dasharray="5 4"/>
+          <line id="sail-force-arrow" x1="350" y1="210" x2="421.456" y2="159.965" stroke="#f3a276" stroke-width="3" marker-end="url(#sail-force-head)"/>
+          <g class="sail-handle js-only" id="sail-handle" transform="translate(472.873 123.964)" aria-hidden="true"><circle r="26" fill="transparent"/><circle class="sail-handle-ring" r="12" fill="#102e3b" stroke="#f5f2e9" stroke-width="1.5"/><circle r="3" fill="#9bd2ca"/></g>
+          <g class="sail-legend"><path d="M28 351H51" stroke="#f3a276" stroke-width="3"/><text x="60" y="355">Sail acceleration</text><path d="M240 351H263" stroke="#9bd2ca" stroke-width="2" stroke-dasharray="4 3"/><text x="272" y="355">Components</text><path d="M432 351H455" stroke="#d7e8e2" stroke-dasharray="3 4"/><text x="464" y="355">Sail normal</text></g>
+        </svg>
+        <div class="sail-controls">
+          <div class="sail-control-heading"><label for="sail-angle">Tilt from face-on <span aria-hidden="true">α</span></label><div><strong id="sail-angle-value">+35°</strong><button class="sail-reset js-only" type="button" id="sail-reset" disabled>Reset</button></div></div>
+          <div class="sail-slider js-only"><input id="sail-angle" type="range" min="-90" max="90" step="1" value="35" aria-describedby="sail-angle-help sail-value-help" disabled><div class="sail-slider-labels" aria-hidden="true"><span>−90°</span><span>0° · face-on</span><span>+90°</span></div></div>
+          <p class="sail-angle-help" id="sail-angle-help">Use the slider or drag the ring. The angle is measured from the sunlight direction to the sail normal.</p>
+          <div class="sail-presets js-only" role="group" aria-label="Try a sail orientation"><button type="button" data-sail-preset="0" aria-pressed="false" disabled>Face-on</button><button type="button" data-sail-preset="35" aria-pressed="true" disabled>+35°</button><button type="button" data-sail-preset="-35" aria-pressed="false" disabled>−35°</button><button type="button" data-sail-preset="90" aria-pressed="false" disabled>Edge-on</button></div>
+          <dl class="sail-readouts"><div><dt>Total push</dt><dd id="sail-total">67.1%</dd></div><div><dt>Outward</dt><dd id="sail-radial">55.0%</dd></div><div><dt>Sideways</dt><dd id="sail-sideways">+38.5%</dd></div></dl>
+          <p class="sail-value-help" id="sail-value-help">Relative to the face-on acceleration, a₀ = 1.</p>
+          <p class="sail-observation" id="sail-observation" role="status" aria-live="polite">Tilting adds a sideways component while reducing the total push.</p>
+          <noscript><p>This sketch shows +35°. Enable JavaScript to change the sail angle.</p></noscript>
+          <details class="sail-model"><summary>What the model shows</summary><div><p>A flat, perfectly reflecting sail in fixed sunlight. The orange vector is instantaneous sail acceleration, not velocity or a flight path. Gravity and non-ideal optical effects are outside this sketch.</p><div class="sail-equations"><code>|a| / a₀ = cos²(α)</code><code>aᵣ / a₀ = cos³(α)</code><code>aₜ / a₀ = cos²(α) sin(α)</code></div><p>The normal is perpendicular to the sail surface. Positive and negative tilt reverse the sideways component; the outward component remains non-negative. The components form a vector sum.</p><p>Public ideal-sail physics; original geometry and normalized values. No thesis trajectories, controller parameters, or unpublished results are used.</p><a href="https://engineering.purdue.edu/people/kathleen.howell.1/Publications/Journals/2011_IJAE_WawHow.pdf" target="_blank" rel="noopener noreferrer">Model reference: Wawrzyniak &amp; Howell (2011), Eq. 4 <span aria-hidden="true">↗</span></a></div></details>
+        </div>
+        <figcaption><span>Interactive concept explorer</span><span>Fixed sunlight · normalized units</span></figcaption>
+      </figure>
     </section>
     <div class="discipline-strip"><div class="shell"><span>Orbital dynamics</span><span aria-hidden="true">✳</span><span>Ground systems</span><span aria-hidden="true">✳</span><span>Verification</span><span aria-hidden="true">✳</span><span>Human-centred software</span></div></div>
     <section class="work-section shell section-space" id="work" aria-labelledby="work-title">
