@@ -58,6 +58,63 @@ const cases = {
     ],
     takeaway: "A conversion pipeline is more useful when a person can explain where every output came from.",
     tags: ["Electron", "Node.js", "JavaScript", "Spreadsheet processing", "Fixed-point arithmetic", "Data provenance"]
+  },
+  io: {
+    eyebrow: "Engineering notebook / Team course project",
+    title: "Connect the lander to its relay.",
+    summary: "A coauthored communications and data-handling study within a conceptual Io lander mission-design project.",
+    facts: [["Role", "Coauthor of subsystem study"], ["Context", "Team academic mission concept"], ["Focus", "Communication and data handling"]],
+    sections: [
+      ["The design question", "A lander can generate useful science data only if the mission can store it and move it through the communication chain. Antenna coverage, relay geometry, radio-link margins, contact timing, and buffering all influence that chain."],
+      ["My contribution", "I coauthored the communications and data-handling study within the larger team project. The work connected antenna placement and coverage, link-budget reasoning, relay visibility, and data-return analysis, supported by Python calculations and visualisation."],
+      ["What the checks taught me", "The review separated line of sight, antenna field of view, radio-link screening, and usable communication time. A geometric opportunity alone does not establish a complete communication window; pointing, link conditions, and data flow need consistent treatment."],
+      ["Scope", "This is a conceptual academic design study. End-to-end operational qualification and coupled communication-buffer behaviour remain open validation questions. This overview shares the engineering reasoning without the original configuration tables or numerical results."]
+    ],
+    takeaway: "Visibility, a viable radio link, and useful data delivery are separate questions that need to agree.",
+    tags: ["Communication links", "Antenna coverage", "Link budgets", "Data handling", "Python", "Mission concepts"]
+  },
+  lifeSupport: {
+    eyebrow: "Engineering notebook / Coauthored course review",
+    title: "Make life support a design driver.",
+    summary: "A coauthored narrative engineering review of closed-loop life support for permanent lunar and Martian surface habitats.",
+    facts: [["Role", "Coauthor"], ["Context", "Planets & Life coursework"], ["Method", "Literature-based systems review"]],
+    sections: [
+      ["The systems question", "Recovering air, water, and other resources changes the rest of a habitat. Higher loop closure also affects power demand, thermal control, maintenance, consumables, and the time the crew spends keeping the system running."],
+      ["Our review", "We compared physico-chemical, biological, and hybrid life-support architectures using published work. The review considered how these approaches fit lunar and Martian surface habitats and how staged deployment changes the design choices."],
+      ["My contribution", "I coauthored the course report and its engineering discussion. The project helped me connect subsystem choices to wider habitat constraints and explain trade-offs across disciplines."],
+      ["Scope", "The outcome is a narrative engineering review of published concepts. The work supports comparison and systems reasoning; it does not provide a newly sized habitat, an experimental demonstration, or validated performance claims."]
+    ],
+    takeaway: "The useful design question is how resource recovery fits the whole habitat, including its crew and maintenance needs.",
+    tags: ["Life support", "Habitat systems", "Loop closure", "Systems trade-offs", "Literature review"]
+  },
+  entry: {
+    eyebrow: "Engineering notebook / Individual coursework",
+    title: "Follow the entry physics.",
+    summary: "Individual Python notebook studies connecting analytical entry dynamics with explicit physical assumptions.",
+    facts: [["Role", "Individual notebook solutions"], ["Context", "Atmospheric-entry coursework"], ["Method", "Analytical models and plots"]],
+    sections: [
+      ["The physical question", "A capsule entering an atmosphere trades speed for aerodynamic forces and heating. Ballistic coefficient, entry angle, and atmospheric density influence where deceleration occurs and how the motion develops."],
+      ["What I worked through", "I used Python notebooks for prescribed course problems involving return energy, drag, ballistic coefficient, peak deceleration, dynamic pressure, and velocity–altitude relationships. The notebooks connect calculations with plots so changes in assumptions can be interpreted physically."],
+      ["Model judgement", "The study also examined limitations of simplified ideal-gas and drag-dominated treatments. Their predictions need to be interpreted within the speed ranges and physical effects represented by the model, particularly as omitted gravity or gas-physics effects become important."],
+      ["Scope", "These are analytical coursework studies. The portfolio describes the methods and lessons without reproducing assignment questions, original result plots, or claiming a validated entry simulator."]
+    ],
+    takeaway: "An interpretable curve needs both an equation and a clear account of the physics that equation leaves out.",
+    tags: ["Python", "Jupyter notebooks", "Atmospheric entry", "Ballistic coefficient", "Analytical modelling"]
+  },
+  gestures: {
+    eyebrow: "Engineering notebook / Personal software adaptation",
+    title: "Make gestures deliberate.",
+    summary: "A personal Swift/AppKit fork of MiddleClick, adapting Magic Mouse touch gestures and their input lifecycle.",
+    facts: [["Basis", "MiddleClick · GPL-3.0"], ["Contribution", "Personal gesture and control changes"], ["Status", "Working fork; device checks ongoing"]],
+    sections: [
+      ["The interaction problem", "A touch gesture needs enough evidence of deliberate intent before it becomes an action. Ordinary pointer activity, incomplete gestures, and changes in the application lifecycle can make that decision less straightforward."],
+      ["My adaptation", "Building on MiddleClick, I adapted tap and inward-pinch gestures for my Magic Mouse and added separate sensitivity controls, local diagnostics, and reconnect controls. The changes include cancelling pending actions when their context changes and rejecting stale input."],
+      ["How I separate checks", "Recognizer and lifecycle checks support software verification. Core gestures have also been checked on my own mouse. The newest sensitivity range, other mouse models, and physical sleep/reconnect scenarios still need separate device acceptance."],
+      ["Attribution and scope", "This is a personal adaptation of an existing GPL-3.0 project. Upstream authorship is retained, and the portfolio describes my changes. The private fork, application package, sensor traces, and device identifiers are not distributed here."]
+    ],
+    takeaway: "Input handling needs to know both what a gesture means and whether its context is still valid when the action fires.",
+    tags: ["Swift", "AppKit", "Gesture recognition", "State machines", "Lifecycle handling"],
+    links: [["Upstream MiddleClick · GPL-3.0", "https://github.com/artginzburg/MiddleClick"]]
   }
 };
 
@@ -121,6 +178,19 @@ function openCase(key, trigger) {
   const takeaway = element("div", "", "case-takeaway");
   takeaway.append(element("span", "The engineering thread"), element("p", project.takeaway));
   content.append(takeaway);
+  if (project.links) {
+    const links = element("ul", "", "case-links");
+    for (const [label, href] of project.links) {
+      const item = element("li");
+      const link = element("a", label);
+      link.href = href;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      item.append(link);
+      links.append(item);
+    }
+    content.append(links);
+  }
   const tags = element("ul", "", "case-tags tags");
   tags.setAttribute("aria-label", "Technologies and methods");
   for (const tag of project.tags) tags.append(element("li", tag));

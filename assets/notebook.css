@@ -1,0 +1,176 @@
+/* Additional studies sit below the main case studies as a quieter notebook. */
+.notebook-section {
+  border-top: 1px solid var(--line);
+}
+
+.notebook-section .section-heading {
+  margin-bottom: 34px;
+}
+
+.notebook-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.notebook-card {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 28px;
+  background: rgba(255, 253, 247, .42);
+}
+
+.notebook-card-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 23px;
+}
+
+.notebook-card-top > .notebook-meta {
+  min-width: 0;
+  flex: 1 1 auto;
+}
+
+.notebook-icon {
+  display: block;
+  width: 90px;
+  height: 48px;
+  max-width: 28%;
+  flex: 0 0 auto;
+  margin-left: auto;
+  color: var(--ink);
+}
+
+.notebook-number {
+  display: inline-grid;
+  width: 29px;
+  height: 29px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  color: var(--rust);
+  font-size: 9px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.notebook-meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 550;
+  line-height: 1.8;
+  letter-spacing: .09em;
+  text-transform: uppercase;
+}
+
+.notebook-card h3 {
+  max-width: 490px;
+  margin: 0 0 13px;
+  font-size: clamp(25px, 2.25vw, 29px);
+  font-weight: 550;
+  line-height: 1.22;
+  letter-spacing: -.035em;
+}
+
+.notebook-card > p:not(.notebook-meta):not(.notebook-attribution) {
+  max-width: 53ch;
+  margin: 0 0 20px;
+  color: var(--muted);
+  font-size: 14.5px;
+  line-height: 1.8;
+}
+
+.notebook-card .notebook-attribution {
+  margin: 0 0 17px;
+  color: var(--muted);
+  font-size: 11.5px;
+  line-height: 1.8;
+}
+
+.notebook-attribution a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.notebook-attribution a:hover {
+  color: var(--rust);
+}
+
+.notebook-card > .tags {
+  margin-top: auto;
+}
+
+.notebook-card .tags {
+  gap: 6px;
+}
+
+.notebook-card .case-link {
+  min-height: 42px;
+  margin-top: 18px;
+}
+
+.notebook-note {
+  max-width: 850px;
+  margin: 26px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.85;
+}
+
+/* Source links belong to their project dialog, not the global navigation. */
+.case-dialog .case-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 24px;
+  padding: 0;
+  margin: 23px 0 0;
+  list-style: none;
+}
+
+.case-dialog .case-links > li {
+  min-width: 0;
+}
+
+.case-dialog .case-links a {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  gap: 13px;
+  border-bottom: 1px solid var(--line);
+  padding-block: 8px;
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+}
+
+.case-dialog .case-links a:hover {
+  border-color: var(--rust);
+  color: var(--rust);
+}
+
+@media (max-width: 1050px) {
+  .notebook-card { padding: 24px; }
+}
+
+@media (max-width: 760px) {
+  .notebook-section .section-heading { margin-bottom: 28px; }
+  .notebook-grid { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .notebook-card { padding: 23px; }
+  .notebook-card-top { gap: 12px; margin-bottom: 20px; }
+  .notebook-icon { width: 78px; height: 42px; max-width: 26%; }
+  .notebook-card h3 { font-size: 26px; }
+  .notebook-card > p:not(.notebook-meta):not(.notebook-attribution) { font-size: 14px; margin-bottom: 18px; }
+  .notebook-note { margin-top: 23px; }
+  .case-dialog .case-links { gap: 6px 20px; }
+}

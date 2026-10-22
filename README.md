@@ -2,13 +2,14 @@
 
 A responsive, buildless portfolio at **https://meetbhalani.tech**.
 
-The site brings together solar-sail trajectory research, a CubeSat command-verification bachelor's thesis, ground-segment contributions at GOS, and two independent software projects.
+The site brings together solar-sail trajectory research, a CubeSat command-verification bachelor's thesis, ground-segment contributions at GOS, and two independent software projects. An engineering notebook adds an Io communications team study, a coauthored life-support review, individual atmospheric-entry coursework, and a personal MiddleClick adaptation.
 
 ## Edit the site
 
 - `index.html`: page structure, summaries, education, and contact route.
 - `assets/styles.css`: layout, responsive styles, and dialog presentation.
 - `assets/portfolio.js`: project case studies, filters, mobile navigation, and accessible native dialogs.
+- `assets/notebook.css`: the compact engineering-notebook cards and attribution links.
 - `assets/sail-model.mjs`: public, normalized ideal-sail physics and diagram geometry.
 - `assets/sail-explorer.js` and `assets/sail-explorer.css`: angle slider, drag handle, presets, readouts, and presentation.
 - `tests/sail-model.test.mjs`: analytic reference cases, vector invariants, geometry, and boundary checks.
@@ -34,6 +35,8 @@ Run the dependency-free model checks with Node.js: `node --test tests/sail-model
 ## Public content
 
 The case studies use high-level descriptions and original conceptual diagrams. They distinguish ongoing research, completed thesis work, and prototype or packaged software. The GitHub profile is the sole public contact route.
+
+The notebook keeps team coursework, coauthored literature review, individual course solutions, and a personal software fork distinct. The MiddleClick entry links to [its upstream project](https://github.com/artginzburg/MiddleClick) and retains GPL-3.0 attribution. Reference-only applications and materials are excluded from personal project claims.
 
 Keep client data, internal technical identifiers, operational screenshots, and private source material out of this repository. Local previews and working notes in `output/` are ignored by Git.
 
